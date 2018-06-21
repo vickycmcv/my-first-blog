@@ -1,6 +1,6 @@
 h1 a {
     color: #FCA205;
-    font-family: 'Lobster';
+    font-family: 'Indie Flower', cursive;
 }
 
 body {
@@ -15,8 +15,19 @@ body {
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
     color: #ffffff;
-    font-size: 36pt;
+    font-size: 35pt;
     text-decoration: none;
+    text-align: center;
+    font-family: 'Cabin Sketch', cursive;
+    letter-spacing: 1px;
+}
+
+.page-header h3{
+    color: #ffffff;
+    font-size: 18pt;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
 }
 
 .content {
@@ -24,7 +35,7 @@ body {
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Lobster', cursive;
+    font-family: 'Indie Flower', cursive;
 }
 
 .date {
@@ -51,5 +62,8 @@ h1, h2, h3, h4 {
 }
 
 .post h1 a, .post h1 a:visited {
-    color: #000000;
+    color: #444444;
+}
+.post a {
+    color: ff9400
 }
