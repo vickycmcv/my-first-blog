@@ -7,10 +7,14 @@
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
         <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
+        {% if user.is_authenticated %}
+          <a href="{% url 'post_draft_list' %}" class="top-menu"><span class="glyphicon glyphicon-edit"></span></a>
+        <!-- El siguiente botón es el de crear nuevo, antes estaba en el body, antes del h1 -->
+          <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+        {% endif %}
     </head>
     <body>
         <div class="page-header">
-            <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
             <h1><strong><a href="/">Pyckycmcv Blog</a></strong></h1>
             <h3>Aprendiendo a pensar como una máquina</h3>
         </div>
